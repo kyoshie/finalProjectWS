@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+.icon img{
+    height: 30px;
+    width: 30px;
+}
+
+#sidebar {
+    width: 250px;
+    background: #343a40;
+    transition: all 0.3s ease-in-out;
+    height: 100vh;
+  }
+
+  #sidebar.collapsed {
+    width: 80px;
+  }
+  
+  #sidebar .nav-link {
+    color: #ffffff;
+    padding: 10px 20px;
+  }
+
+  #sidebar .journal {
+    background-color: #ffc107;
+    color: #1f2d3d;
+  }
+
+
+
+  #sidebar .nav-link i {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+
+  #sidebar.collapsed .nav-link {
+    justify-content: center;
+  }
+
+  #sidebar.collapsed .nav-link span {
+    display: none;
+  }
+
+  .sidebar-logo {
+    align-items: center;
+    padding: 5px 5%;
+    color: #ffffff;
+  }
+
+  #sidebar.collapsed .sidebar-logo a {
+    display: none;
+  }
+  
+  .sidebar-footer {
+    margin-top: auto;
+    padding: 10px 20px;
+    color: #ffffff;
+  }
+
+  #toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
