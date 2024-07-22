@@ -1,3 +1,6 @@
-document.getElementById('toggle-btn').addEventListener('click', function() {
-    document.getElementById('sidebar').classList.toggle('collapsed');
-  });
+var el = document.getElementById("wrapper");
+var toggleButton = document.getElementById("menu-toggle");
+
+toggleButton.onclick = function () {
+    el.classList.toggle("toggled");
+};
