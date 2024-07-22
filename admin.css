@@ -1,76 +1,115 @@
-body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-  .wrapper {
-    width: 100%;
-  }
-
-.icon img{
-    height: 30px;
-    width: 30px;
+body{
+  font-family: 'Poppins';
+}
+img {
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
 }
 
-#sidebar {
-    width: 250px;
-    background: #343a40;
-    transition: all 0.3s ease-in-out;
-    height: 100vh;
-  }
+#wrapper{
+  overflow-x: hidden;
+}
 
-  #sidebar.collapsed {
-    width: 80px;
-  }
-  
-  #sidebar .nav-link {
-    color: #ffffff;
-    padding: 10px 20px;
-  }
+.side{
+  background: #343a40;
+}
 
-  #sidebar .journal {
-    background-color: #ffc107;
-    color: #1f2d3d;
-  }
+#sidebar-wrapper{
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
 
-  #sidebar .nav-link i {
-    margin-right: 10px;
-    font-size: 1.2em;
-  }
+#sidebar-wrapper .sidebar-heading{
+  font-family: 'Poppins';
+  padding: 0.875rem 1.25rem;
+  font-size: 1.25rem;
+}
 
-  #sidebar.collapsed .nav-link {
-    justify-content: center;
-  }
+#sidebar-wrapper  .list-group{
+  width: 15rem;
+}
 
-  #sidebar.collapsed .nav-link span {
-    display: none;
-  }
+#page-content-wrapper{
+  min-width: 100vw;
+}
 
-  .sidebar-logo {
-    align-items: center;
-    padding: 5px 5%;
-    color: #ffffff;
-  }
+#wrapper.toggled #sidebar-wrapper {
+  margin-left:0;
+}
 
-  #sidebar.collapsed .sidebar-logo a {
-    display: none;
-  }
-  
-  .sidebar-footer {
-    margin-top: auto;
-    padding: 10px 20px;
-    color: #ffffff;
-  }
+#menu-toggle {
+  cursor: pointer;
+}
 
-  #toggle-btn {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
+.list-group-item, 
+.list-group-item.active {
+  font-family: 'Poppins';
+  border: none;
+}
 
-  .content {
-    border: 1px solid black;
-  }
+.sidebar-heading{
+  color: aliceblue;
+}
 
-  
+i{
+  margin-right: 10px;
+}
+
+
+@media (min-width: 768px){
+    #sidebar-wrapper{
+      margin-left:0;    
+    }
+
+    #page-content-wrapper{
+      min-width: 0;
+      width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+
+}
+
+
+.p-3{
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.p-3 .journal-header,
+.article-header{
+width: 100%;
+background-color: #752738 !important;
+height: 50px;
+padding: .75rem 1.25rem;
+position: relative;
+border-bottom: 1px solid rgba(0,0,0,.125);
+color: white;
+ 
+}
+
+.journal-title,
+.article-title{
+float: left;
+font-weight: 400;
+font-size: 1.1rem;
+}
+
+.journal-body,
+.article-body{
+  margin-top: 20px;
+}
+
+small {
+  margin-top: 10px;
+}
+
+.sec {
+  margin-top: 20px;
+}
