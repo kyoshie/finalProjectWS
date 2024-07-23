@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    background: url("images/login-background.png");
+    background-position: center;
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.logo-container img {
+    max-width: 150px;
+    height: auto;
+}
+.form-container {
+    margin-bottom: 1.5rem;
+}
+.submit-container {
+    text-align: center;
+    width: 100%;
+}
+
+.register-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.register-container a {
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+    transition: all .3s;
+}
+
+.register-container a:hover {
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+}
+
+.both-container {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+
+.both-container a {
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.both-container a:hover{
+    color: rgb(71, 71, 71);
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #ffa775 !important;
+    border: transparent;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+.btn-primary:hover {
+    background-color: #d79066 !important;
+}
+
+.both-container a {
+    margin-left: 37px;
+}
+
+.both-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Adjust background size for smaller screens */
+    }
+    .btn-primary {
+        width: 100%; /* Make buttons full width on smaller screens */
+        max-width: 200px; /* Limit maximum width */
+    }
+    .logo-container img {
+        max-width: 120px; /* Adjust logo size */
+    }
+    /* Additional adjustments as needed */
+    .both-container {
+        font-size: 11px;
+    }
+}

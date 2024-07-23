@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: url('/images/editorial_background.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 75px;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+
+.nav-link{
+position: relative;
+}
+
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-left: 15px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+    
+}
+
+footer {
+    margin-top: auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    color: rgb(114, 114, 114);
+}
+
+section.editorial-board .tag {
+    width: 60.85%; 
+    height: 100%; 
+    margin: 0; 
+    padding: 50px 125px; 
+    /* border: 1px solid red;  */
+    box-sizing: border-box; 
+}
+
+section.editorial-board .tag h1 {
+    color: #884642;
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+section.editorial-board .tag h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2vw;
+}
+
+section.editorial-board .tag p {
+    font-size: 18px;
+    
+}
+
+section.editorial-board .tag .cell-text p {
+    display: inline-block;
+}
+
+section.editorial-board .tag .cell-text .name {
+    font-weight: bold;
+    color: #884642;
+}
+
+section.editorial-board .tag .cell-text .role {
+    color: grey;
+    margin-left: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    section.editorial-board .tag {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    section.editorial-board .tag h1 {
+        font-size: 7vw;
+    }
+
+    section.editorial-board .tag h3 {
+        font-size: 4vw; 
+    }
+
+    section.editorial-board .tag p {
+        font-size: 2vw; 
+    }
+
+    .cell-text p {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    section.editorial-board .tag {
+        width: 100%;
+        padding: 20px 10px; 
+    }
+
+    section.editorial-board .tag h1 {
+        font-size: 9vw; 
+    }
+
+    section.editorial-board .tag h3 {
+        font-size: 5vw;
+    }
+
+    section.editorial-board .tag p {
+        font-size: 3vw;
+    }
+
+    .cell-text p {
+        display: block;
+    }
+}
+

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: url('/images/guidelines-background.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 75px;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+
+.nav-link{
+position: relative;
+}
+
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-left: 15px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+    
+}
+
+footer {
+    margin-top: auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    color: rgb(114, 114, 114);
+}
+
+section.guidelines .tag {
+    width: 65%;
+    height: auto;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+section.guidelines .tag h1 {
+   margin-top: 45px;
+   font-weight: 700;
+   color: #884642;
+}
+
+section.guidelines .tag h4 {
+    color: #884642;
+}
+
+section.guidelines .tag p {
+    margin-top: 15px;
+    text-indent: 2rem;
+}
+
+section.guidelines .tag p.ending {
+    padding-bottom: 60px;
+}
+
+
